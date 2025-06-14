@@ -1,91 +1,47 @@
 from django.contrib import admin
-from .models import Realization, Appointment, Comment, RealizationImage
-from django.http import HttpResponse
-from reportlab.pdfgen import canvas
-import io
-from reportlab.lib.pagesizes import letter
-from reportlab.pdfbase.ttfonts import TTFont
-from reportlab.pdfbase import pdfmetrics
+from django.contrib.auth.models import Group, User
+from .models import Realization, RealizationImage
+from django.contrib.auth.admin import UserAdmin, GroupAdmin
+from django.contrib.admin.actions import delete_selected
+from django import forms
+from django.forms.widgets import ClearableFileInput
 
 
-# Mixin class to add PDF export functionality
-class ExportPDFMixin:
-    def get_model(self, queryset):
-        # Get the model class from the queryset
-        return queryset.model
-
-    def export_to_pdf(self, request, queryset):
-        buffer = io.BytesIO()
-        p = canvas.Canvas(buffer, pagesize=letter)
-
-        # Register font Calibri
-        pdfmetrics.registerFont(TTFont('Calibri', 'mainapp/static/mainapp/calibri.ttf'))
-        p.setFont('Calibri', 12)
-
-        model = self.get_model(queryset)
-
-        # Download date from views Django and change them to PDF
-        if model == Realization:
-            for obj in queryset:
-                p.drawString(100, 750, f"Tytuł: {obj.title}")
-                p.drawString(100, 730, f"Opis: {obj.content}")
-                p.drawString(100, 710, f"Data: {obj.date.strftime('%Y-%m-%d %H:%M:%S')}")
-                p.showPage()
-
-        elif model == Appointment:
-            for obj in queryset:
-                p.drawString(100, 750, f"Opis projektu: {obj.description}")
-                p.drawString(100, 730, f"Data: {obj.date.strftime('%Y-%m-%d %H:%M:%S')}")
-                p.showPage()
-
-        elif model == Comment:
-            for obj in queryset:
-                p.drawString(100, 750, f"Realizacja: {obj.realization}")
-                p.drawString(100, 730, f"Autor: {obj.author}")
-                p.drawString(100, 710, f"Treść: {obj.content}")
-                p.drawString(100, 690, f"Data: {obj.date.strftime('%Y-%m-%d %H:%M:%S')}")
-                p.showPage()
-
-        p.save()
-
-        buffer.seek(0)
-        response = HttpResponse(buffer, content_type='application/pdf')
-        response['Content-Disposition'] = 'attachment; filename="database_report.pdf"'
-        return response
-
-    export_to_pdf.short_description = "Export to PDF"
-
-
-# Admin class for Appointment model with PDF export functionality
-class AppointmentAdmin(admin.ModelAdmin, ExportPDFMixin):
-    list_display = ('description', 'date')
-    list_filter = ('date',)
-    search_fields = ('description',)
-    ordering = ('date',)
-    fieldsets = (
-        (None, {
-            'fields': ('description',)
-        }),
-        ('Informacje o dacie', {
-            'fields': ('date',),
-            'description': 'Pola powiązane z datą wizyty'
-        }),
+class CustomClearableFileInput(ClearableFileInput):
+    template_with_initial = (
+        '%(initial_text)s: <a href="%(initial_url)s">%(initial)s</a> '
+        '%(clear_template)s<br />%(input_text)s: %(input)s'
     )
-    actions = ['export_to_pdf']
+    initial_text = "Aktualne zdjęcie"
+    input_text = "Zmień"
+
+
+class RealizationAdminForm(forms.ModelForm):
+    class Meta:
+        model = Realization
+        fields = '__all__'
+        widgets = {
+            'content': forms.Textarea(attrs={'rows': 8, 'cols': 100}),
+            'image': CustomClearableFileInput(),
+        }
 
 
 class RealizationImageInline(admin.TabularInline):
     model = RealizationImage
     extra = 1
+    verbose_name = "Zdjęcie dodatkowe"
+    verbose_name_plural = "Zdjęcia dodatkowe"
 
 
 # Admin class for Realization model with PDF export functionality
-class RealizationAdmin(admin.ModelAdmin, ExportPDFMixin):
+class RealizationAdmin(admin.ModelAdmin):
+    form = RealizationAdminForm
     list_display = ('title', 'date')
     list_filter = ('date',)
     search_fields = ('title', 'content')
     ordering = ('-date',)
     inlines = [RealizationImageInline]
+    actions = ['custom_delete_selected']
 
     fieldsets = (
         (None, {
@@ -96,28 +52,34 @@ class RealizationAdmin(admin.ModelAdmin, ExportPDFMixin):
             'description': 'Pola powiązane z realizacją'
         }),
     )
-    actions = ['export_to_pdf']
+
+    def get_actions(self, request):
+        actions = super().get_actions(request)
+        if 'delete_selected' in actions:
+            del actions['delete_selected']
+        return actions
+
+    @admin.action(description='Usuń wybrane realizacje')
+    def custom_delete_selected(self, request, queryset):
+        return delete_selected(self, request, queryset)
 
 
-# Admin class for Comment model with PDF export functionality
-class CommentAdmin(admin.ModelAdmin, ExportPDFMixin):
-    list_display = ('realization', 'author', 'content', 'date')
-    list_filter = ('date', 'author')
-    search_fields = ('content',)
-    ordering = ('-date',)
-    fieldsets = (
-        (None, {
-            'fields': ('realization', 'author')
-        }),
-        ('Informacje o komentarzu', {
-            'fields': ('content', 'date'),
-            'description': 'Pole powiązane z komentarzem'
-        }),
-    )
-    actions = ['export_to_pdf']
-
+admin.site.site_header = "Admin Panel"
+admin.site.site_title = "Panel Administracyjny"
+admin.site.index_title = "Zarządzanie stroną"
 
 # Register the models with their respective admin classes
-admin.site.register(Appointment, AppointmentAdmin)
-admin.site.register(Comment, CommentAdmin)
 admin.site.register(Realization, RealizationAdmin)
+
+try:
+    admin.site.register(User, UserAdmin)
+except admin.sites.AlreadyRegistered:
+    pass
+
+try:
+    admin.site.register(Group, GroupAdmin)
+except admin.sites.AlreadyRegistered:
+    pass
+
+admin.site.unregister(User)
+admin.site.unregister(Group)

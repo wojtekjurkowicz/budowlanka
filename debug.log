@@ -5963,3 +5963,91 @@ django.db.utils.OperationalError: no such table: mainapp_realizationimage
 2024-06-17 23:19:03,659 [DEBUG] Renderowanie strony g³ównej
 2024-06-17 23:19:21,718 [DEBUG] Renderowanie strony g³ównej
 2024-06-17 23:19:33,024 [DEBUG] Renderowanie strony g³ównej
+2024-08-30 21:19:38,865 [INFO] Watching for file changes with StatReloader
+2024-08-30 21:19:41,843 [DEBUG] Renderowanie strony g³ównej
+2024-08-30 21:19:43,726 [WARNING] Not Found: /favicon.ico
+2024-08-30 21:19:48,410 [DEBUG] Pobrano czêœæ wpisów
+2024-08-30 21:19:57,243 [DEBUG] Renderowanie strony g³ównej
+2025-06-14 17:00:40,999 [INFO] Watching for file changes with StatReloader
+2025-06-14 17:00:43,775 [DEBUG] Renderowanie strony g³ównej
+2025-06-14 17:00:45,515 [WARNING] Not Found: /favicon.ico
+2025-06-14 17:07:12,193 [INFO] Watching for file changes with StatReloader
+2025-06-14 17:10:05,471 [INFO] C:\Users\wojte\Pulpit\szkola\semestr_4\szkieletory\budowlanka\mainapp\admin.py changed, reloading.
+2025-06-14 17:10:06,638 [INFO] Watching for file changes with StatReloader
+2025-06-14 17:10:42,835 [INFO] C:\Users\wojte\Pulpit\szkola\semestr_4\szkieletory\budowlanka\mainapp\forms.py changed, reloading.
+2025-06-14 17:10:43,752 [INFO] Watching for file changes with StatReloader
+2025-06-14 17:11:13,462 [INFO] C:\Users\wojte\Pulpit\szkola\semestr_4\szkieletory\budowlanka\mainapp\views.py changed, reloading.
+2025-06-14 17:11:14,270 [INFO] Watching for file changes with StatReloader
+2025-06-14 17:11:14,637 [DEBUG] Renderowanie strony g³ównej
+2025-06-14 17:11:14,648 [ERROR] Problem przy renderowaniu strony g³ównej: Reverse for 'appointment' not found. 'appointment' is not a valid view function or pattern name.
+2025-06-14 17:11:54,558 [DEBUG] Renderowanie strony g³ównej
+2025-06-14 17:11:54,560 [ERROR] Problem przy renderowaniu strony g³ównej: Reverse for 'appointment' not found. 'appointment' is not a valid view function or pattern name.
+2025-06-14 17:11:54,761 [INFO] C:\Users\wojte\Pulpit\szkola\semestr_4\szkieletory\budowlanka\mainapp\models.py changed, reloading.
+2025-06-14 17:11:55,584 [INFO] Watching for file changes with StatReloader
+2025-06-14 17:11:55,986 [DEBUG] Renderowanie strony g³ównej
+2025-06-14 17:11:55,998 [ERROR] Problem przy renderowaniu strony g³ównej: Reverse for 'appointment' not found. 'appointment' is not a valid view function or pattern name.
+2025-06-14 17:12:20,023 [INFO] Watching for file changes with StatReloader
+2025-06-14 17:13:11,981 [DEBUG] Renderowanie strony g³ównej
+2025-06-14 17:13:21,747 [DEBUG] Pobrano czêœæ wpisów
+2025-06-14 17:13:29,078 [DEBUG] Renderowanie formularza kontaktowego
+2025-06-14 17:13:36,865 [DEBUG] Renderowanie strony g³ównej
+2025-06-14 17:16:04,176 [INFO] C:\Users\wojte\Pulpit\szkola\semestr_4\szkieletory\budowlanka\mainapp\admin.py changed, reloading.
+2025-06-14 17:16:05,169 [INFO] Watching for file changes with StatReloader
+2025-06-14 17:17:14,781 [INFO] Watching for file changes with StatReloader
+2025-06-14 17:18:22,896 [INFO] C:\Users\wojte\Pulpit\szkola\semestr_4\szkieletory\budowlanka\mainapp\admin.py changed, reloading.
+2025-06-14 17:18:23,785 [INFO] Watching for file changes with StatReloader
+2025-06-14 17:18:31,671 [INFO] C:\Users\wojte\Pulpit\szkola\semestr_4\szkieletory\budowlanka\mainapp\admin.py changed, reloading.
+2025-06-14 17:18:32,631 [INFO] Watching for file changes with StatReloader
+2025-06-14 17:18:45,815 [INFO] C:\Users\wojte\Pulpit\szkola\semestr_4\szkieletory\budowlanka\mainapp\admin.py changed, reloading.
+2025-06-14 17:18:46,635 [INFO] Watching for file changes with StatReloader
+2025-06-14 17:20:44,016 [INFO] C:\Users\wojte\Pulpit\szkola\semestr_4\szkieletory\budowlanka\mainapp\models.py changed, reloading.
+2025-06-14 17:20:44,840 [INFO] Watching for file changes with StatReloader
+2025-06-14 17:20:56,466 [INFO] Watching for file changes with StatReloader
+2025-06-14 17:33:36,655 [INFO] C:\Users\wojte\Pulpit\szkola\semestr_4\szkieletory\budowlanka\mainapp\admin.py changed, reloading.
+2025-06-14 17:33:37,562 [INFO] Watching for file changes with StatReloader
+2025-06-14 17:36:13,674 [INFO] C:\Users\wojte\Pulpit\szkola\semestr_4\szkieletory\budowlanka\mainapp\admin.py changed, reloading.
+2025-06-14 17:36:14,532 [INFO] Watching for file changes with StatReloader
+2025-06-14 17:37:25,508 [INFO] C:\Users\wojte\Pulpit\szkola\semestr_4\szkieletory\budowlanka\mainapp\admin.py changed, reloading.
+2025-06-14 17:37:26,405 [INFO] Watching for file changes with StatReloader
+2025-06-14 17:37:47,162 [INFO] C:\Users\wojte\Pulpit\szkola\semestr_4\szkieletory\budowlanka\mainapp\admin.py changed, reloading.
+2025-06-14 17:37:48,104 [INFO] Watching for file changes with StatReloader
+2025-06-14 17:45:26,572 [INFO] C:\Users\wojte\Pulpit\szkola\semestr_4\szkieletory\budowlanka\mainapp\admin.py changed, reloading.
+2025-06-14 17:45:27,476 [INFO] Watching for file changes with StatReloader
+2025-06-14 17:46:14,224 [INFO] C:\Users\wojte\Pulpit\szkola\semestr_4\szkieletory\budowlanka\mainapp\admin.py changed, reloading.
+2025-06-14 17:46:15,272 [INFO] Watching for file changes with StatReloader
+2025-06-14 17:46:36,796 [INFO] C:\Users\wojte\Pulpit\szkola\semestr_4\szkieletory\budowlanka\mainapp\admin.py changed, reloading.
+2025-06-14 17:46:37,590 [INFO] Watching for file changes with StatReloader
+2025-06-14 17:46:48,611 [INFO] C:\Users\wojte\Pulpit\szkola\semestr_4\szkieletory\budowlanka\mainapp\admin.py changed, reloading.
+2025-06-14 17:46:49,430 [INFO] Watching for file changes with StatReloader
+2025-06-14 17:47:33,111 [INFO] C:\Users\wojte\Pulpit\szkola\semestr_4\szkieletory\budowlanka\mainapp\admin.py changed, reloading.
+2025-06-14 17:47:34,139 [INFO] Watching for file changes with StatReloader
+2025-06-14 17:48:55,044 [WARNING] Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-06-14 17:50:15,560 [INFO] C:\Users\wojte\Pulpit\szkola\semestr_4\szkieletory\budowlanka\mainapp\admin.py changed, reloading.
+2025-06-14 17:50:16,393 [INFO] Watching for file changes with StatReloader
+2025-06-14 17:51:26,247 [INFO] C:\Users\wojte\Pulpit\szkola\semestr_4\szkieletory\budowlanka\mainapp\models.py changed, reloading.
+2025-06-14 17:51:27,395 [INFO] Watching for file changes with StatReloader
+2025-06-14 17:51:51,095 [INFO] C:\Users\wojte\Pulpit\szkola\semestr_4\szkieletory\budowlanka\mainapp\models.py changed, reloading.
+2025-06-14 17:51:52,071 [INFO] Watching for file changes with StatReloader
+2025-06-14 17:51:52,458 [WARNING] Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-06-14 17:52:41,037 [INFO] C:\Users\wojte\Pulpit\szkola\semestr_4\szkieletory\budowlanka\mainapp\admin.py changed, reloading.
+2025-06-14 17:52:41,836 [INFO] Watching for file changes with StatReloader
+2025-06-14 17:57:26,265 [INFO] C:\Users\wojte\Pulpit\szkola\semestr_4\szkieletory\budowlanka\mainapp\admin.py changed, reloading.
+2025-06-14 17:57:27,079 [INFO] Watching for file changes with StatReloader
+2025-06-14 17:57:43,372 [INFO] C:\Users\wojte\Pulpit\szkola\semestr_4\szkieletory\budowlanka\mainapp\admin.py changed, reloading.
+2025-06-14 17:57:44,184 [INFO] Watching for file changes with StatReloader
+2025-06-14 17:59:08,649 [INFO] Watching for file changes with StatReloader
+2025-06-14 17:59:43,188 [INFO] C:\Users\wojte\Pulpit\szkola\semestr_4\szkieletory\budowlanka\mainapp\admin.py changed, reloading.
+2025-06-14 17:59:44,140 [INFO] Watching for file changes with StatReloader
+2025-06-14 17:59:54,224 [INFO] C:\Users\wojte\Pulpit\szkola\semestr_4\szkieletory\budowlanka\mainapp\admin.py changed, reloading.
+2025-06-14 17:59:55,356 [INFO] Watching for file changes with StatReloader
+2025-06-14 18:01:28,689 [INFO] C:\Users\wojte\Pulpit\szkola\semestr_4\szkieletory\budowlanka\mainapp\admin.py changed, reloading.
+2025-06-14 18:01:29,713 [INFO] Watching for file changes with StatReloader
+2025-06-14 18:02:16,613 [INFO] C:\Users\wojte\Pulpit\szkola\semestr_4\szkieletory\budowlanka\mainapp\models.py changed, reloading.
+2025-06-14 18:02:17,505 [INFO] Watching for file changes with StatReloader
+2025-06-14 18:02:35,223 [DEBUG] Renderowanie strony g³ównej
+2025-06-14 18:02:45,152 [DEBUG] Pobrano czêœæ wpisów
+2025-06-14 18:02:51,861 [DEBUG] Renderowanie formularza kontaktowego
+2025-06-14 18:03:01,115 [DEBUG] Renderowanie strony g³ównej
+2025-06-14 18:03:55,106 [DEBUG] Renderowanie strony g³ównej
+2025-06-14 18:04:01,447 [DEBUG] Renderowanie strony g³ównej
+2025-06-14 18:49:41,760 [DEBUG] Renderowanie strony g³ównej
