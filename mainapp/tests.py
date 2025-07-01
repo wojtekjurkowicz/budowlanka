@@ -6,27 +6,38 @@ from django.core.paginator import Page
 from django.contrib.admin.sites import AdminSite
 
 from .forms import AppointmentForm, CommentForm, ContactForm
-from .models import Appointment, Realization, Comment
+from .models import Appointment, Realization, Comment, RealizationImage
 from .admin import RealizationAdmin, AppointmentAdmin, CommentAdmin
 from .views import CalendarView
+from django.utils import timezone
+from datetime import datetime
+from django.utils.timezone import make_aware
 
 
 # Model tests
 class TestModels(TestCase):
     def test_appointment_str_representation(self):
         """Test string representation of Appointment model"""
-        appointment = Appointment(description="Test Appointment", date="2024-05-21")
+        aware_date = make_aware(datetime(2024, 5, 21))
+        appointment = Appointment(description="Test Appointment", date=aware_date)
         self.assertEqual(str(appointment), "Test Appointment")
 
     def test_realization_str_representation(self):
         """Test string representation of Realization model"""
-        realization = Realization(title="Test", content="Test Realization", date="2024-05-21")
+        aware_date = make_aware(datetime(2024, 5, 21))
+        realization = Realization(title="Test", content="Test Realization", date=aware_date)
         self.assertEqual(str(realization), "Test")
 
     def test_comment_str_representation(self):
         """Test string representation of Comment model"""
-        comment = Comment(realization_id=1, author_id=1, content="Test Comment", date="2024-05-21")
+        aware_date = make_aware(datetime(2024, 5, 21))
+        comment = Comment(realization_id=1, author_id=1, content="Test Comment", date=aware_date)
         self.assertEqual(str(comment), "Test Comment")
+
+    def test_realization_image_str(self):
+        realization = Realization.objects.create(title="T", content="C")
+        img = RealizationImage.objects.create(realization=realization, image="fake.jpg")
+        self.assertEqual(str(img), "T Image")
 
 
 # Forms tests
@@ -45,6 +56,14 @@ class TestForms(TestCase):
         form = ContactForm(
             data={'first_name': 'Test', 'last_name': 'User', 'email': 'test@example.com', 'message': 'Test Message'})
         self.assertTrue(form.is_valid())
+
+    def test_appointment_invalid_form(self):
+        form = AppointmentForm(data={'description': ''})  # brak daty i opisu
+        self.assertFalse(form.is_valid())
+
+    def test_comment_invalid_form(self):
+        form = CommentForm(data={'content': ''})
+        self.assertFalse(form.is_valid())
 
 
 # Views tests
@@ -113,6 +132,11 @@ class TestViews(TestCase):
         self.assertEqual(response.status_code, 302)  # Should redirect after successful post
         self.assertEqual(Comment.objects.count(), 1)  # Ensure that the comment is created
 
+    def test_contact_view_get(self):
+        response = self.client.get(self.contact_url)
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'mainapp/contact.html')
+
 
 # Email sending tests
 class TestEmail(TestCase):
@@ -144,7 +168,8 @@ class TestPagination(TestCase):
     """Tests for pagination"""
 
     def setUp(self):
-        """Setup before tests"""
+        self.client = Client()
+        self.list_url = reverse('mainapp:blog')
         for i in range(15):
             Realization.objects.create(title=f'Test Title {i}', content=f'Test Content {i}')
 
@@ -170,6 +195,11 @@ class TestPagination(TestCase):
         self.assertTrue('page_obj' in response.context)
         self.assertEqual(len(response.context['page_obj']), 5)
 
+    def test_blog_view_no_entries(self):
+        Realization.objects.all().delete()
+        response = self.client.get(reverse('mainapp:blog'))
+        self.assertEqual(response.status_code, 200)
+
 
 class MockRequest:
     pass
@@ -188,7 +218,8 @@ class AdminExportPDFTest(TestCase):
         self.comment_admin = CommentAdmin(Comment, self.site)
 
         self.realization = Realization.objects.create(title="Test Title", content="Test Content")
-        self.appointment = Appointment.objects.create(description="Test Appointment", date="2024-05-21")
+        aware_date = make_aware(datetime(2024, 5, 21))
+        self.appointment = Appointment.objects.create(description="Test Appointment", date=aware_date)
         self.comment = Comment.objects.create(realization=self.realization,
                                               author=User.objects.create(username='testuser'), content="Test Comment")
 
@@ -234,3 +265,15 @@ class TestContactForm(TestCase):
         """Test invalid ContactForm"""
         form = ContactForm(data={'first_name': '', 'last_name': '', 'email': 'invalid', 'message': ''})
         self.assertFalse(form.is_valid())
+
+
+class TestCalendarView(TestCase):
+    def test_format_month_generates_html(self):
+        # Tworzymy wizytę na maj 2024
+        Appointment.objects.create(description="Wizyta testowa", date=timezone.datetime(2024, 5, 15, tzinfo=timezone.utc))
+
+        calendar = CalendarView()
+        html = calendar.formatmonth(2024, 5)
+        self.assertIn('<table', html)
+        self.assertIn('Zajęty termin', html)
+

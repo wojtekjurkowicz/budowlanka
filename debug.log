@@ -5963,3 +5963,222 @@ django.db.utils.OperationalError: no such table: mainapp_realizationimage
 2024-06-17 23:19:03,659 [DEBUG] Renderowanie strony g³ównej
 2024-06-17 23:19:21,718 [DEBUG] Renderowanie strony g³ównej
 2024-06-17 23:19:33,024 [DEBUG] Renderowanie strony g³ównej
+2025-07-01 23:30:47,942 [DEBUG] Data submitted: <QueryDict: {'description': ['Testowa wizyta'], 'date': ['2024-05-21T10:00:00Z']}>
+2025-07-01 23:30:47,983 [INFO] Wizyta utworzona na 21-5-2024 z opisem Testowa wizyta
+2025-07-01 23:30:47,983 [INFO] Wys³ano e-mail potwierdzaj¹cy wizytê.
+2025-07-01 23:30:47,992 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:30:48,060 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:30:48,066 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:30:48,762 [DEBUG] Renderowanie formularza wizyty
+2025-07-01 23:30:49,489 [DEBUG] Data submitted: <QueryDict: {'description': ['Test Appointment'], 'date': ['2024-05-21T10:00:00Z']}>
+2025-07-01 23:30:49,490 [INFO] Wizyta utworzona na 21-5-2024 z opisem Test Appointment
+2025-07-01 23:30:49,492 [INFO] Wys³ano e-mail potwierdzaj¹cy wizytê.
+2025-07-01 23:30:50,213 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:30:51,006 [INFO] Nowy komentarz dodany przez testuser do realizacji 1
+2025-07-01 23:30:51,716 [INFO] Wiadomoœæ wys³ana przez testuser
+2025-07-01 23:30:51,717 [DEBUG] Renderowanie strony g³ównej
+2025-07-01 23:30:52,421 [DEBUG] Widok szczegó³owy dla realizacji 1
+2025-07-01 23:32:16,616 [DEBUG] Data submitted: <QueryDict: {'description': ['Testowa wizyta'], 'date': ['2024-05-21T10:00:00Z']}>
+2025-07-01 23:32:16,635 [INFO] Wizyta utworzona na 21-5-2024 z opisem Testowa wizyta
+2025-07-01 23:32:16,636 [INFO] Wys³ano e-mail potwierdzaj¹cy wizytê.
+2025-07-01 23:32:16,646 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:32:16,667 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:32:16,674 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:32:17,375 [DEBUG] Renderowanie formularza wizyty
+2025-07-01 23:32:18,192 [DEBUG] Data submitted: <QueryDict: {'description': ['Test Appointment'], 'date': ['2024-05-21T10:00:00Z']}>
+2025-07-01 23:32:18,194 [INFO] Wizyta utworzona na 21-5-2024 z opisem Test Appointment
+2025-07-01 23:32:18,194 [INFO] Wys³ano e-mail potwierdzaj¹cy wizytê.
+2025-07-01 23:32:18,894 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:32:19,614 [INFO] Nowy komentarz dodany przez testuser do realizacji 1
+2025-07-01 23:32:20,300 [INFO] Wiadomoœæ wys³ana przez testuser
+2025-07-01 23:32:20,301 [DEBUG] Renderowanie strony g³ównej
+2025-07-01 23:32:20,985 [DEBUG] Widok szczegó³owy dla realizacji 1
+2025-07-01 23:33:18,303 [DEBUG] Data submitted: <QueryDict: {'description': ['Testowa wizyta'], 'date': ['2024-05-21T10:00:00Z']}>
+2025-07-01 23:33:18,321 [INFO] Wizyta utworzona na 21-5-2024 z opisem Testowa wizyta
+2025-07-01 23:33:18,321 [INFO] Wys³ano e-mail potwierdzaj¹cy wizytê.
+2025-07-01 23:33:18,330 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:33:18,349 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:33:18,355 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:33:19,059 [DEBUG] Renderowanie formularza wizyty
+2025-07-01 23:33:19,765 [DEBUG] Data submitted: <QueryDict: {'description': ['Test Appointment'], 'date': ['2024-05-21T10:00:00Z']}>
+2025-07-01 23:33:19,767 [INFO] Wizyta utworzona na 21-5-2024 z opisem Test Appointment
+2025-07-01 23:33:19,767 [INFO] Wys³ano e-mail potwierdzaj¹cy wizytê.
+2025-07-01 23:33:20,453 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:33:21,141 [INFO] Nowy komentarz dodany przez testuser do realizacji 1
+2025-07-01 23:33:21,870 [INFO] Wiadomoœæ wys³ana przez testuser
+2025-07-01 23:33:21,871 [DEBUG] Renderowanie strony g³ównej
+2025-07-01 23:33:22,583 [DEBUG] Widok szczegó³owy dla realizacji 1
+2025-07-01 23:34:24,774 [DEBUG] Data submitted: <QueryDict: {'description': ['Testowa wizyta'], 'date': ['2024-05-21T10:00:00Z']}>
+2025-07-01 23:34:24,793 [INFO] Wizyta utworzona na 21-5-2024 z opisem Testowa wizyta
+2025-07-01 23:34:24,793 [INFO] Wys³ano e-mail potwierdzaj¹cy wizytê.
+2025-07-01 23:34:24,802 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:34:24,820 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:34:24,826 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:34:25,542 [DEBUG] Renderowanie formularza wizyty
+2025-07-01 23:34:26,315 [DEBUG] Data submitted: <QueryDict: {'description': ['Test Appointment'], 'date': ['2024-05-21T10:00:00Z']}>
+2025-07-01 23:34:26,317 [INFO] Wizyta utworzona na 21-5-2024 z opisem Test Appointment
+2025-07-01 23:34:26,317 [INFO] Wys³ano e-mail potwierdzaj¹cy wizytê.
+2025-07-01 23:34:27,049 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:34:27,813 [INFO] Nowy komentarz dodany przez testuser do realizacji 1
+2025-07-01 23:34:28,600 [INFO] Wiadomoœæ wys³ana przez testuser
+2025-07-01 23:34:28,601 [DEBUG] Renderowanie strony g³ównej
+2025-07-01 23:34:29,352 [DEBUG] Widok szczegó³owy dla realizacji 1
+2025-07-01 23:35:29,465 [DEBUG] Data submitted: <QueryDict: {'description': ['Testowa wizyta'], 'date': ['2024-05-21T10:00:00Z']}>
+2025-07-01 23:35:29,486 [INFO] Wizyta utworzona na 21-5-2024 z opisem Testowa wizyta
+2025-07-01 23:35:29,486 [INFO] Wys³ano e-mail potwierdzaj¹cy wizytê.
+2025-07-01 23:35:29,495 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:35:29,512 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:35:29,519 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:35:30,236 [DEBUG] Renderowanie formularza wizyty
+2025-07-01 23:35:30,980 [DEBUG] Data submitted: <QueryDict: {'description': ['Test Appointment'], 'date': ['2024-05-21T10:00:00Z']}>
+2025-07-01 23:35:30,981 [INFO] Wizyta utworzona na 21-5-2024 z opisem Test Appointment
+2025-07-01 23:35:30,982 [INFO] Wys³ano e-mail potwierdzaj¹cy wizytê.
+2025-07-01 23:35:31,710 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:35:32,413 [INFO] Nowy komentarz dodany przez testuser do realizacji 1
+2025-07-01 23:35:33,093 [INFO] Wiadomoœæ wys³ana przez testuser
+2025-07-01 23:35:33,094 [DEBUG] Renderowanie strony g³ównej
+2025-07-01 23:35:33,795 [DEBUG] Widok szczegó³owy dla realizacji 1
+2025-07-01 23:37:53,297 [DEBUG] Data submitted: <QueryDict: {'description': ['Testowa wizyta'], 'date': ['2024-05-21T10:00:00Z']}>
+2025-07-01 23:37:53,311 [INFO] Wizyta utworzona na 21-5-2024 z opisem Testowa wizyta
+2025-07-01 23:37:53,312 [INFO] Wys³ano e-mail potwierdzaj¹cy wizytê.
+2025-07-01 23:37:53,325 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:37:53,343 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:37:53,348 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:37:54,110 [DEBUG] Renderowanie formularza wizyty
+2025-07-01 23:37:54,905 [DEBUG] Data submitted: <QueryDict: {'description': ['Test Appointment'], 'date': ['2024-05-21T10:00:00Z']}>
+2025-07-01 23:37:54,907 [INFO] Wizyta utworzona na 21-5-2024 z opisem Test Appointment
+2025-07-01 23:37:54,907 [INFO] Wys³ano e-mail potwierdzaj¹cy wizytê.
+2025-07-01 23:37:55,634 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:37:56,334 [INFO] Nowy komentarz dodany przez testuser do realizacji 1
+2025-07-01 23:37:57,033 [INFO] Wiadomoœæ wys³ana przez testuser
+2025-07-01 23:37:57,034 [DEBUG] Renderowanie strony g³ównej
+2025-07-01 23:37:57,844 [DEBUG] Renderowanie formularza kontaktowego
+2025-07-01 23:37:58,613 [DEBUG] Widok szczegó³owy dla realizacji 1
+2025-07-01 23:37:59,376 [ERROR] B³¹d w widoku szczegó³owym dla realizacji 9999: No Realization matches the given query.
+2025-07-01 23:40:35,750 [DEBUG] Data submitted: <QueryDict: {'description': ['Testowa wizyta'], 'date': ['2024-05-21T10:00:00Z']}>
+2025-07-01 23:40:35,764 [INFO] Wizyta utworzona na 21-5-2024 z opisem Testowa wizyta
+2025-07-01 23:40:35,764 [INFO] Wys³ano e-mail potwierdzaj¹cy wizytê.
+2025-07-01 23:40:35,775 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:40:35,789 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:40:35,798 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:40:35,804 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:40:36,497 [DEBUG] Renderowanie formularza wizyty
+2025-07-01 23:40:37,216 [DEBUG] Data submitted: <QueryDict: {'description': ['Test Appointment'], 'date': ['2024-05-21T10:00:00Z']}>
+2025-07-01 23:40:37,218 [INFO] Wizyta utworzona na 21-5-2024 z opisem Test Appointment
+2025-07-01 23:40:37,218 [INFO] Wys³ano e-mail potwierdzaj¹cy wizytê.
+2025-07-01 23:40:37,913 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:40:38,642 [INFO] Nowy komentarz dodany przez testuser do realizacji 1
+2025-07-01 23:40:39,342 [INFO] Wiadomoœæ wys³ana przez testuser
+2025-07-01 23:40:39,343 [DEBUG] Renderowanie strony g³ównej
+2025-07-01 23:40:40,060 [DEBUG] Renderowanie formularza kontaktowego
+2025-07-01 23:40:40,778 [DEBUG] Widok szczegó³owy dla realizacji 1
+2025-07-01 23:40:41,468 [ERROR] B³¹d w widoku szczegó³owym dla realizacji 1: No Realization matches the given query.
+2025-07-01 23:41:33,373 [DEBUG] Data submitted: <QueryDict: {'description': ['Testowa wizyta'], 'date': ['2024-05-21T10:00:00Z']}>
+2025-07-01 23:41:33,391 [INFO] Wizyta utworzona na 21-5-2024 z opisem Testowa wizyta
+2025-07-01 23:41:33,392 [INFO] Wys³ano e-mail potwierdzaj¹cy wizytê.
+2025-07-01 23:41:33,403 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:41:33,418 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:41:33,427 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:41:33,434 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:41:34,152 [DEBUG] Renderowanie formularza wizyty
+2025-07-01 23:41:34,887 [DEBUG] Data submitted: <QueryDict: {'description': ['Test Appointment'], 'date': ['2024-05-21T10:00:00Z']}>
+2025-07-01 23:41:34,888 [INFO] Wizyta utworzona na 21-5-2024 z opisem Test Appointment
+2025-07-01 23:41:34,889 [INFO] Wys³ano e-mail potwierdzaj¹cy wizytê.
+2025-07-01 23:41:35,590 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:41:36,307 [INFO] Nowy komentarz dodany przez testuser do realizacji 1
+2025-07-01 23:41:37,007 [INFO] Wiadomoœæ wys³ana przez testuser
+2025-07-01 23:41:37,008 [DEBUG] Renderowanie strony g³ównej
+2025-07-01 23:41:37,738 [DEBUG] Renderowanie formularza kontaktowego
+2025-07-01 23:41:38,459 [DEBUG] Widok szczegó³owy dla realizacji 1
+2025-07-01 23:41:39,183 [ERROR] B³¹d w widoku szczegó³owym dla realizacji 999999: No Realization matches the given query.
+2025-07-01 23:42:40,332 [DEBUG] Data submitted: <QueryDict: {'description': ['Testowa wizyta'], 'date': ['2024-05-21T10:00:00Z']}>
+2025-07-01 23:42:40,352 [INFO] Wizyta utworzona na 21-5-2024 z opisem Testowa wizyta
+2025-07-01 23:42:40,352 [INFO] Wys³ano e-mail potwierdzaj¹cy wizytê.
+2025-07-01 23:42:40,363 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:42:40,377 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:42:40,386 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:42:40,392 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:42:41,107 [DEBUG] Renderowanie formularza wizyty
+2025-07-01 23:42:41,887 [DEBUG] Data submitted: <QueryDict: {'description': ['Test Appointment'], 'date': ['2024-05-21T10:00:00Z']}>
+2025-07-01 23:42:41,888 [INFO] Wizyta utworzona na 21-5-2024 z opisem Test Appointment
+2025-07-01 23:42:41,890 [INFO] Wys³ano e-mail potwierdzaj¹cy wizytê.
+2025-07-01 23:42:42,638 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:42:43,360 [INFO] Nowy komentarz dodany przez testuser do realizacji 1
+2025-07-01 23:42:44,069 [INFO] Wiadomoœæ wys³ana przez testuser
+2025-07-01 23:42:44,070 [DEBUG] Renderowanie strony g³ównej
+2025-07-01 23:42:44,814 [DEBUG] Renderowanie formularza kontaktowego
+2025-07-01 23:42:45,590 [DEBUG] Widok szczegó³owy dla realizacji 1
+2025-07-01 23:42:46,684 [ERROR] B³¹d w widoku szczegó³owym dla realizacji 999999: No Realization matches the given query.
+2025-07-01 23:43:28,908 [DEBUG] Data submitted: <QueryDict: {'description': ['Testowa wizyta'], 'date': ['2024-05-21T10:00:00Z']}>
+2025-07-01 23:43:28,922 [INFO] Wizyta utworzona na 21-5-2024 z opisem Testowa wizyta
+2025-07-01 23:43:28,922 [INFO] Wys³ano e-mail potwierdzaj¹cy wizytê.
+2025-07-01 23:43:28,932 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:43:28,946 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:43:28,956 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:43:28,962 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:43:29,639 [DEBUG] Renderowanie formularza wizyty
+2025-07-01 23:43:30,336 [DEBUG] Data submitted: <QueryDict: {'description': ['Test Appointment'], 'date': ['2024-05-21T10:00:00Z']}>
+2025-07-01 23:43:30,338 [INFO] Wizyta utworzona na 21-5-2024 z opisem Test Appointment
+2025-07-01 23:43:30,338 [INFO] Wys³ano e-mail potwierdzaj¹cy wizytê.
+2025-07-01 23:43:31,011 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:43:31,690 [INFO] Nowy komentarz dodany przez testuser do realizacji 1
+2025-07-01 23:43:32,362 [INFO] Wiadomoœæ wys³ana przez testuser
+2025-07-01 23:43:32,364 [DEBUG] Renderowanie strony g³ównej
+2025-07-01 23:43:33,034 [DEBUG] Renderowanie formularza kontaktowego
+2025-07-01 23:43:33,710 [DEBUG] Widok szczegó³owy dla realizacji 1
+2025-07-01 23:43:34,756 [ERROR] B³¹d w widoku szczegó³owym dla realizacji 2: No Realization matches the given query.
+2025-07-01 23:45:29,653 [DEBUG] Data submitted: <QueryDict: {'description': ['Testowa wizyta'], 'date': ['2024-05-21T10:00:00Z']}>
+2025-07-01 23:45:29,671 [INFO] Wizyta utworzona na 21-5-2024 z opisem Testowa wizyta
+2025-07-01 23:45:29,671 [INFO] Wys³ano e-mail potwierdzaj¹cy wizytê.
+2025-07-01 23:45:29,682 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:45:29,696 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:45:29,705 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:45:29,711 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:45:30,390 [DEBUG] Renderowanie formularza wizyty
+2025-07-01 23:45:31,081 [DEBUG] Data submitted: <QueryDict: {'description': ['Test Appointment'], 'date': ['2024-05-21T10:00:00Z']}>
+2025-07-01 23:45:31,083 [INFO] Wizyta utworzona na 21-5-2024 z opisem Test Appointment
+2025-07-01 23:45:31,083 [INFO] Wys³ano e-mail potwierdzaj¹cy wizytê.
+2025-07-01 23:45:31,756 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:45:32,433 [INFO] Nowy komentarz dodany przez testuser do realizacji 1
+2025-07-01 23:45:33,112 [INFO] Wiadomoœæ wys³ana przez testuser
+2025-07-01 23:45:33,113 [DEBUG] Renderowanie strony g³ównej
+2025-07-01 23:45:33,788 [DEBUG] Renderowanie formularza kontaktowego
+2025-07-01 23:45:34,466 [DEBUG] Widok szczegó³owy dla realizacji 1
+2025-07-01 23:49:06,181 [DEBUG] Renderowanie strony g³ównej
+2025-07-01 23:49:06,539 [DEBUG] Renderowanie strony g³ównej
+2025-07-01 23:49:07,333 [DEBUG] Data submitted: <QueryDict: {'description': ['Testowa wizyta'], 'date': ['2024-05-21T10:00:00Z']}>
+2025-07-01 23:49:07,346 [INFO] Wizyta utworzona na 21-5-2024 z opisem Testowa wizyta
+2025-07-01 23:49:07,346 [INFO] Wys³ano e-mail potwierdzaj¹cy wizytê.
+2025-07-01 23:49:07,357 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:49:07,363 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:49:07,372 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:49:07,378 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:49:08,058 [DEBUG] Renderowanie formularza wizyty
+2025-07-01 23:49:08,753 [DEBUG] Data submitted: <QueryDict: {'description': ['Test Appointment'], 'date': ['2024-05-21T10:00:00Z']}>
+2025-07-01 23:49:08,754 [INFO] Wizyta utworzona na 21-5-2024 z opisem Test Appointment
+2025-07-01 23:49:08,755 [INFO] Wys³ano e-mail potwierdzaj¹cy wizytê.
+2025-07-01 23:49:09,430 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:49:10,113 [INFO] Nowy komentarz dodany przez testuser do realizacji 1
+2025-07-01 23:49:10,798 [INFO] Wiadomoœæ wys³ana przez testuser
+2025-07-01 23:49:10,799 [DEBUG] Renderowanie strony g³ównej
+2025-07-01 23:49:11,468 [DEBUG] Renderowanie formularza kontaktowego
+2025-07-01 23:49:12,149 [DEBUG] Widok szczegó³owy dla realizacji 1
+2025-07-01 23:51:02,338 [DEBUG] Renderowanie strony g³ównej
+2025-07-01 23:51:02,699 [DEBUG] Renderowanie strony g³ównej
+2025-07-01 23:51:03,485 [DEBUG] Data submitted: <QueryDict: {'description': ['Testowa wizyta'], 'date': ['2024-05-21T10:00:00Z']}>
+2025-07-01 23:51:03,502 [INFO] Wizyta utworzona na 21-5-2024 z opisem Testowa wizyta
+2025-07-01 23:51:03,502 [INFO] Wys³ano e-mail potwierdzaj¹cy wizytê.
+2025-07-01 23:51:03,512 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:51:03,518 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:51:03,527 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:51:03,533 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:51:04,206 [DEBUG] Renderowanie formularza wizyty
+2025-07-01 23:51:04,900 [DEBUG] Data submitted: <QueryDict: {'description': ['Test Appointment'], 'date': ['2024-05-21T10:00:00Z']}>
+2025-07-01 23:51:04,902 [INFO] Wizyta utworzona na 21-5-2024 z opisem Test Appointment
+2025-07-01 23:51:04,902 [INFO] Wys³ano e-mail potwierdzaj¹cy wizytê.
+2025-07-01 23:51:05,572 [DEBUG] Pobrano czêœæ wpisów
+2025-07-01 23:51:06,250 [INFO] Nowy komentarz dodany przez testuser do realizacji 1
+2025-07-01 23:51:06,925 [INFO] Wiadomoœæ wys³ana przez testuser
+2025-07-01 23:51:06,926 [DEBUG] Renderowanie strony g³ównej
+2025-07-01 23:51:07,600 [DEBUG] Renderowanie formularza kontaktowego
+2025-07-01 23:51:08,278 [DEBUG] Widok szczegó³owy dla realizacji 1

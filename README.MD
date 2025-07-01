@@ -1,30 +1,83 @@
-# Budowlanka Project
+# Budowlanka 🏗️
 
-Budowlanka Project jest aplikacją webową stworzoną w Django 5.0.4, która służy do zarządzania realizacjami, wizytami oraz komentarzami. Projekt wykorzystuje Django Admin do zarządzania treściami oraz oferuje eksport danych do formatu PDF.
+Aplikacja webowa stworzona w Django, umożliwiająca przeglądanie realizacji budowlanych, dodawanie komentarzy, rejestrację użytkowników oraz zarządzanie wizytami.
 
-## Opis aplikacji
+## 📂 Struktura aplikacji
 
-Aplikacja składa się z kilku modułów:
+### `mainapp`
+- `Realization` – model realizacji budowlanych
+- `Comment` – komentarze przypisane do realizacji
+- `Appointment` – model wizyt
+- Widoki:
+  - `index` – strona główna
+  - `blog` – lista realizacji z paginacją
+  - `detail` – szczegóły realizacji + komentarze
+  - `contact` – formularz kontaktowy
+  - `calendar_view` – kalendarz z wizytami
+- Panel administratora z generowaniem PDF (ReportLab)
 
-### Mainapp
+### `accounts`
+- Rejestracja i logowanie użytkownika
+- Obsługa formularzy Django (`UserCreationForm`, `AuthenticationForm`)
 
-Moduł `mainapp` zawiera modele oraz widoki dotyczące realizacji (`Realization`), wizyt (`Appointment`) oraz komentarzy (`Comment`). Zawiera również szablony HTML oraz formularze do zarządzania tymi treściami.
+## 🚀 Instalacja
 
-### Accounts
+1. Sklonuj repozytorium:
 
-Moduł `accounts` odpowiada za zarządzanie użytkownikami i autoryzacją w systemie. Umożliwia logowanie, rejestrację oraz zarządzanie kontem użytkownika.
+```bash
+git clone https://github.com/TwojaNazwa/budowlanka.git
+cd budowlanka
+````
 
-## Moduł Admina
+2. Utwórz środowisko wirtualne i aktywuj:
 
-### `admin.py`
+```bash
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+```
 
-Moduł `admin.py` definiuje specjalne klasy admina dla każdego z modeli (`RealizationAdmin`, `AppointmentAdmin`, `CommentAdmin`). Każda z tych klas zawiera funkcjonalność eksportu danych do formatu PDF dzięki wykorzystaniu biblioteki `reportlab`. 
+3. Zainstaluj zależności:
 
-### `apps.py`
+```bash
+pip install -r requirements.txt
+```
 
-Moduł `apps.py` definiuje konfigurację aplikacji Django (`MainappConfig`) i jest używany do rejestrowania aplikacji w `settings.py`.
+4. Wykonaj migracje i uruchom serwer:
 
-## Uwagi
+```bash
+python manage.py migrate
+python manage.py runserver
+```
 
-Aplikacja jest w pełni skonfigurowana do działania w środowisku deweloperskim. Wymaga dalszej konfiguracji i dostosowania do środowiska produkcyjnego, w tym ustawienia bazy danych, serwera pocztowego oraz zabezpieczeń.
+## 🧪 Testowanie
 
+Aby uruchomić testy jednostkowe:
+
+```bash
+python manage.py test
+```
+
+Projekt zawiera ponad 30 testów jednostkowych pokrywających:
+
+* logowanie i rejestrację
+* formularze (poprawne i błędne dane)
+* widoki (`GET`, `POST`, 404)
+* paginację
+* eksport PDF w adminie
+
+## 🛠 Technologie
+
+* Python 3.x
+* Django 5.0.4
+* HTML5, CSS3
+* Bootstrap (jeśli używany)
+* ReportLab (generowanie PDF)
+* SQLite (domyślna baza) / PostgreSQL (w środowisku CI)
+
+## 👤 Autor
+
+Projekt stworzony przez \[Twoje Imię lub GitHub Username].
+
+## 📄 Licencja
+
+Zobacz plik [LICENSE](./LICENSE) – wszelkie prawa zastrzeżone.
