@@ -1,4 +1,5 @@
 # Budowlanka 🏗️
+![Django Tests](https://github.com/wojtekjurkowicz/budowlanka/actions/workflows/tests.yml/badge.svg)
 
 Aplikacja webowa stworzona w Django, umożliwiająca przeglądanie realizacji budowlanych, dodawanie komentarzy, rejestrację użytkowników oraz zarządzanie wizytami.
 
